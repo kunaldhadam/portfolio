@@ -15,6 +15,20 @@ html,
 body {
     scroll-behavior: smooth;
 }
+#mobile-menu {
+        min-height: 100vh;
+        width: 80%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+        transition: all 0.3s ease-in-out;
+
+        &.hidden-menu{
+            left: -100%;
+        }
+    }
 
 .trispace-regular {
     font-family: "Trispace", sans-serif;
@@ -306,6 +320,21 @@ section {
 }
 
 @media screen and (max-width: 1146px) {
+
+    #mobile-menu {
+        min-height: 100vh;
+        width: 80%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+        transition: all 0.3s ease-in-out;
+
+        &.hidden-menu{
+            left: -100%;
+        }
+    }
     .sketchbook {
         display: flex;
         flex-direction: column;
@@ -353,6 +382,11 @@ footer {
         top: 0;
         left: 0;
         border-right: 1px solid black;
+        transition: all 0.3s ease-in-out;
+
+        &.hidden-menu{
+            left: -100%;
+        }
     }
 
     .desktop-nav {

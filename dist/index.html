@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal Dhadam | Portfolio</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <ul class="desktop-nav nav-list flex">
+            <li class="item1"><a href="#home">Home</a></li>
+            <li class="item2"><a href="#aboutme">About Me</a></li>
+            <li class="item3"><a href="#services">Services</a></li>
+            <li class="item4"><a href="#blogs">Blogs</a></li>
+            <li class="item5"><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="mobile-menu" class="hidden text-black">
+            <ul class="nav-list">
+                <li class="item1"><a href="#home">Home</a></li>
+                <li class="item2"><a href="#aboutme">About Me</a></li>
+                <li class="item3"><a href="#services">Services</a></li>
+                <li class="item4"><a href="#blogs">Blogs</a></li>
+                <li class="item5"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section id="aboutme" class="hero">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="pfp-part">
+                <div class="holder">
+                    <div class="image-shadow"></div>
+                    <div class="image">
+                        <img class="w-full h-full object-cover inset-0" src="./assets/images/pfp.jpg"
+                            alt="Kunal Dhadam PFP">
+                    </div>
+                </div>
+            </div>
+            <div class="bio-part">
+                <h1 class="name trispace-regular">KUNAL DHADAM</h1>
+                <div>
+                    <h3 class="title text-2xl">Full-Stack Web Developer & Digital Craftsman</h3>
+                </div>
+                <div class="socials flex">
+                    <div><a href="https://www.linkedin.com/in/kunal-dhadam"><img src="./assets/images/linkedin_icon.svg"
+                                alt="LinkedIn" srcset=""></a></div>
+                    <div><a href="https://www.instagram.com/ku_lol__/"><img src="./assets/images/instagram_icon.svg"
+                                alt="Instagram" srcset=""></a></div>
+                    <div><a href="https://github.com/kunaldhadam"><img src="./assets/images/git_icon.svg" alt="Github"
+                                srcset=""></a></div>
+                    <div><a href="mailto:kunaldhadamkd@gmail.com"><img src="./assets/images/gmail_icon.svg" alt="Gmail"
+                                srcset=""></a></div>
+                </div>
+                <div class="my-5 text-base">
+                    <p class="font-bold">Hey, I’m Kunal — yep, the one casually posted beside.</p>
+                    <p>I build things on the internet. Fullstack dev by day, data whisperer by night.<br>
+                    But when I’m not deep in code, I’m sketching faces, writing odd thoughts, or maybe doing… <i>undercover</i>
+                    stuff </p>
+
+                    <p>This site’s a blend of both sides — the work I do and the way I see things.</p>
+                    <p>Scroll around, click stuff, judge me (gently).</p>
+                    <p>Glad you’re here.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="services" class="projects mt-4 static">
+        <div class="section-heading">Projects</div>
+        <div class="project-items">
+            <div class="container grid grid-cols-1 lg:grid-cols-3 place-items-center gap-5">
+                <div class="item-holder mb-3">
+                    <div class="item">
+                        <div class="item-thumbnail shadow-lg">
+                            <a href="https://kunaldhadam.github.io/devdeck/#/" target="_blank"><img class="w-full h-full object-cover inset-0" src="./assets/images/devdeck_thumbnail.png"
+                                alt="Project1" srcset=""></a>
+                        </div>
+                        <div class="item-desc p-3">
+                            <div class="project-title text-3xl mb-3">DevDeck</div>
+                            <div class="project-short-desc">
+                                <p>Description: A lightweight developer toolkit built with ReactJS </p>
+                                <p>TechStack: ReactJS, HTML/CSS, Github </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-shadow">
+                    </div>
+                </div>
+                <div class="item-holder mb-3">
+                    <div class="item">
+                        <div class="item-thumbnail  shadow-lg">
+                            <img class="w-full h-full object-cover inset-0" src="./assets/images/dashboard_asset.jpg"
+                                alt="Project1" srcset="">
+                        </div>
+                        <div class="item-desc p-3">
+                            <div class="project-title text-3xl mb-3">FinSight</div>
+                            <div class="project-short-desc">
+                                <p>
+                                    Python tool that connects to Gmail API to extract and parse bank statement emails.
+                                    Automatically logs transactions into structured Excel sheets with formulas and
+                                    charts.
+                                    Provides monthly spend tracking, income analysis, and runs on a monthly schedule.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-shadow">
+                    </div>
+                </div>
+                <div class="item-holder mb-3">
+                    <div class="item">
+                        <div class="item-thumbnail  shadow-lg">
+                            <img class="w-full h-full object-cover inset-0" src="./assets/images/rubic_cube.jpg"
+                                alt="Project1" srcset="">
+                        </div>
+                        <div class="item-desc p-3">
+                            <div class="project-title text-3xl mb-3">Rubic Cube Algorithm</div>
+                            <div class="project-short-desc">
+                                A Python-based Rubik's Cube solver using IDDFS and A* search algorithms.
+Currently a work-in-progress focusing on optimizing cube state exploration.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blogs" class="blogs">
+        <div class="section-heading">Blogs</div>
+
+        <div class="container mx-auto">
+            <div class="blog-items grid grid-cols-1 lg:grid-cols-3 place-items-center gap-8">
+                <div class="item-holder">
+                    <div class="item p-2">
+                        <div class="item-thumbnail">
+                            <img class="w-full h-full object-cover inset-0" src="./assets//images/tech_blog.jpg"
+                                alt="Technical Blog" srcset="">
+                        </div>
+                        <div class="item-title text-3xl my-3">Technical Blogs</div>
+                        <div class="item-desc-wrapper flex pb-3">
+                            <div class="item-desc text-sm">Code, tools, and dev experiments — all documented here.
+                            </div>
+                            <div class="read-button"><a href="#">Read</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-holder">
+                    <div class="item p-2">
+                        <div class="item-thumbnail">
+                            <img class="w-full h-full object-cover inset-0" src="./assets/images/personal_blog_thumbnail.jpg"
+                                alt="Technical Blog" srcset="">
+                        </div>
+                        <div class="item-title text-3xl my-3">Personal Blogs</div>
+                        <div class="item-desc-wrapper flex pb-3">
+                            <div class="item-desc text-sm">Where code pauses and life begins. Reflections, habits, and
+                                inner monologues.
+                            </div>
+                            <div class="read-button"><a href="#">Read</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-holder">
+                    <div class="item p-2">
+                        <div class="item-thumbnail">
+                            <img class="w-full  object-cover inset-0" src="./assets/images/blog3-thumbnail.jpg"
+                                alt="Technical Blog" srcset="">
+                        </div>
+                        <div class="item-title text-3xl my-3">Creative Blogs</div>
+                        <div class="item-desc-wrapper flex pb-3">
+                            <div class="item-desc text-sm">Design experiments, UI/UX observations, inspirations from art
+                                or minimalism.
+                            </div>
+                            <div class="read-button"><a href="#">Read</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="sketchbook grid grid-cols-1 lg:grid-cols-2 place-items-center">
+
+
+        <div class="text-wrapper">
+            <div class="i-draw">
+                <img src="./assets/images/sketchbook_text.svg" alt="">
+            </div>
+        </div>
+        <div class="art">
+            <div class="art-holder">
+                <img class="art-item-1" src="./assets/images/zayn.jpg" alt="zayn-charcoal-potrait" srcset="">
+                <img class="art-item-2" src="./assets/images/aarya.jpg" alt="aarya-ambekar-charcoal-potrait" srcset="">
+                <img class="art-item-3" src="./assets/images/emma.jpg" alt="emma-watson-charcoal-potrait" srcset="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="grid grid-cols-1 lg:grid-cols-4 p-5 gap-5">
+            <div class="text-white">
+                <span>@ 2025 Kunal Dhadam</span>
+            </div>
+            <div class="text-white">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <ul>
+                    <li><a href="https://github.com/kunaldhadam">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/kunal-dhadam">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/ku_lol__/">Instagram</a></li>
+                    <li><a href="mailto:kunaldhadamkd@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <ul>
+                    <li><a href="#">kunaldhadamkd@gmail.com</a></li>
+                    <li><a href="#">+91 8767192693</a></li>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script src="assets/script/script.js"></script>
+
+</html>
